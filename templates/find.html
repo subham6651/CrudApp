@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update data</title>
+</head>
+
+ <body>
+
+      <form action = "{{ url_for('update_db') }}" method = "POST">
+         <h3>Update Information</h3>
+
+         Student id<br>
+         <input type = "text" name = "sid" /></br>
+          <input type = "submit" value = "find"  name="sbtn"/>
+          <input type = "submit" value = "delete" name="sbtn"/>
+
+          <br>
+      </form>
+
+   </body>
+</html>

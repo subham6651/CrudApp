@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Info</title>
+</head>
+<body>
+
+
+  <form action = "{{url_for('update_info')}}" method = "POST">
+         <h3>Student Information</h3>
+         S_id<br>
+         <input type = "text" name = "sid" value="{{ rows[0][0]}}" readonly/></br>
+         Name<br>
+         <input type = "text" name = "nm" value="{{ rows[0][1]}}"/></br>
+
+         Address<br>
+         <textarea name = "add" > {{ rows[0][2]}}</textarea><br>
+
+         City<br>
+         <input type = "text" name = "city" value="{{ rows[0][3]}}"/><br>
+
+         PINCODE<br>
+         <input type = "text" name = "pin" value="{{ rows[0][4] }}"/><br>
+         <input type = "submit" value = "update" /><br>
+      </form>
+
+
+</body>
+</html>
